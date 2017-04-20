@@ -53,7 +53,7 @@ def randomCalc():
 
 
 def oneProc(id, bestValues, isFound):
-	target = 8317
+	target = 10958
 	closest = -999999999999
 	closestExp = None
 	lastClosest = None
