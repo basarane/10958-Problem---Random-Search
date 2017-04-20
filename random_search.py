@@ -9,7 +9,7 @@ class Node(object):
 		if isinstance(val, int):
 			self.canConcat = True
 		else:
-			self.canConcat = left.canConcat and right.canConcat and val == '|'
+			self.canConcat = left.canConcat and right.canConcat and val == 'c'
 	def calc(self):
 		if isinstance(self.val, int):
 			return 1.0*self.val
@@ -53,7 +53,7 @@ def randomCalc():
 
 
 def oneProc(id, bestValues, isFound):
-	target = 10958
+	target = 8317
 	closest = -999999999999
 	closestExp = None
 	lastClosest = None
